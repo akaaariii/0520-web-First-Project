@@ -1,0 +1,33 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+body {
+    background-color: #eeeeee;
+}
+h1 {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEF7EF;
+}
+
+
+
+/* style for attractions */
+.attraction img {
+    width: 30%;
+}
