@@ -25,6 +25,12 @@ a {
     background-color: #FEF7EF;
 }
 
+/* style for home */
+
+table, th, td {
+    border: 2px solid #464646;
+    border-collapse: collapse;
+}
 
 
 /* style for attractions */
