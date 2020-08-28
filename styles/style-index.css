@@ -39,6 +39,8 @@ a {
     min-height: 100vh;
     background-color: #FEF7EF;
 }
+
+/* style for header and footer */
 header {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -74,8 +76,17 @@ nav a:hover {
 .material-icons {
     color: white;
     font-weight: bold;
-
 }
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+footer a {
+    color: white;
+}
+
 /* style for home */
 .title {
     position: relative;
@@ -110,15 +121,6 @@ table, th, td {
     background: rgb(246,189,96);
     background: linear-gradient(90deg, rgba(246,189,96,1) 0%, rgba(255,232,195,1) 50%, rgba(246,189,96,1) 100%);
 }
-footer {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    padding: 15px;
-}
-footer a {
-    color: white;
-}
 
 /* style for attractions */
 .attractions-title, .shops-title {
@@ -148,6 +150,7 @@ footer a {
     padding: 10px 30px;
 }
 
+/* style for responsible page */
 @media(min-width : 768px){
     header h1 {
         font-size: 2em;
@@ -224,5 +227,9 @@ footer a {
     }
     table {
         width: 70%;
+    }
+    .attraction-item {
+        width: 33.33%;
+        padding: 15px;
     }
 }
