@@ -90,7 +90,6 @@ nav a:hover {
     text-shadow: 6px 6px 0px rgba(0,0,0,0.6);
     animation: fadeIn ease 2s;
 }
-
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
