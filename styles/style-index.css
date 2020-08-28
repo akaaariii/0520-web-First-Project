@@ -88,7 +88,14 @@ nav a:hover {
     font-size: 26px;
     color: white;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.6);
+    animation: fadeIn ease 2s;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 .content-description, .geography-text {
     padding: 10px 30px;
 }
@@ -125,14 +132,21 @@ footer a {
 }
 
 /* style for shops */
+.shop-main {
+    position: relative;
+}
+.shop-main p {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
 .shop img {
     margin-bottom: 5px;
 }
 .shop p {
     padding: 10px 30px;
-}
-small {
-    padding-left: 10px;
 }
 
 @media(min-width : 768px){
