@@ -4,36 +4,202 @@
 body {
     background-color: #eeeeee;
 }
-h1 {
+h1, h2, p {
     margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    padding-left: 10px;
 }
 img {
     max-width: 100%;
     display: block;
     height: auto;
 }
-li {
+ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
 }
+.l-flex {
+    display: flex;
+}
 .wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
     background-color: #FEF7EF;
 }
+header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+header, footer {
+    background-color: #84A59D;
+}
+h1 {
+    color: white;
+    font-size: 20px;
+}
+nav {
+    display: none;
+    width: 100%;
+}
+nav li {
+    padding: 5px;
+}
+nav a {
+    color: #EEB8B0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+nav a:hover {
+    font-size: 1.2em;
+}
+.show nav {
+    display: block;
+}
+.material-icons {
+    color: white;
+    font-weight: bold;
 
+}
 /* style for home */
-
+.title {
+    position: relative;
+}
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: white;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.6);
+}
+.content-description, .geography-text {
+    padding: 10px 30px;
+}
+.content-geography img, table {
+    width: 90%;
+    margin: 0 auto;
+}
 table, th, td {
     border: 2px solid #464646;
     border-collapse: collapse;
 }
-
+.table-title {
+    background: rgb(246,189,96);
+    background: linear-gradient(90deg, rgba(246,189,96,1) 0%, rgba(255,232,195,1) 50%, rgba(246,189,96,1) 100%);
+}
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+footer a {
+    color: white;
+}
 
 /* style for attractions */
-.attraction img {
-    width: 30%;
+.attractions-title, .shops-title {
+    color: #F28482;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+.attraction p {
+    padding: 10px 30px;
+}
+
+/* style for shops */
+.shop img {
+    margin-bottom: 5px;
+}
+.shop p {
+    padding: 10px 30px;
+}
+small {
+    padding-left: 10px;
+}
+
+@media(min-width : 768px){
+    .main-title {
+        font-size: 40px;
+    }
+    .content-description {
+        padding: 10px 60px;
+    }
+    .content-geography {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content-geography img, .geography-text {
+        width: 45%;
+    }
+    .geography-text {
+        padding-left: 0;
+    }
+    table {
+        width: 80%;
+    }
+    .attraction {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .attraction-item {
+        width: 50%;
+        padding: 15px;
+    }
+    .shop-main {
+        padding: 30px;
+    }
+    .shop-images {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .shop-images img {
+        width: 45%;
+    }
+    .shop p {
+        padding: 10px 60px;
+    }
+}
+
+@media(min-width : 1024px){
+    header {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    nav {
+        display: block;
+        width: 35%;
+    }
+    .material-icons {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .content-description {
+        padding: 10px 120px;
+    }
+    .geography-text {
+        padding-right: 60px;
+    }
+    p {
+        line-height: 1.5;
+    }
+    table {
+        width: 70%;
+    }
 }
